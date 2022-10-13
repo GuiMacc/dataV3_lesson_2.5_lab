@@ -23,7 +23,7 @@ SELECT COUNT(DISTINCT last_name) AS 'nº of last names' FROM actor;
 
 -- 6. Since how many days has the company been operating (check DATEDIFF() function)?
 
-SELECT DATEDIFF( MAX(last_update), MIN(last_update)) AS 'total operating days' FROM rental;
+SELECT DATEDIFF( MAX(payment_date), MIN(payment_date))  AS ' total operating days' FROM payment;
 
 -- 7. Show rental info with additional columns month and weekday. Get 20 results.
 
